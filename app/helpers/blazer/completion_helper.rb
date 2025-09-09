@@ -12,7 +12,7 @@ module Blazer
     end
 
     def blazer_table_name_completion_source
-      extract_tables_and_columns(Blazer.data_sources['main'].schema).collect do |entry|
+      extract_tables_and_columns(Blazer.data_sources.first.last.schema).collect do |entry|
         {
           value: entry.first,
           columns: entry.last.map do |column|
