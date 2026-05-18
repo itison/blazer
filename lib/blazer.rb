@@ -74,7 +74,7 @@ module Blazer
   end
   self.audit = true
   self.user_name = :name
-  self.check_schedules = ["5 minutes", "1 hour", "1 day"]
+  self.check_schedules = ["5 minutes", "1 hour", "1 day", "1 month"]
   self.anomaly_checks = false
   self.forecasting = false
   self.async = false
